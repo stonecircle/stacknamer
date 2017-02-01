@@ -1,0 +1,26 @@
+{
+  "name": "stacknamer",
+  "version": "1.0.0",
+  "repository": "https://github.com/stonecircle/stacknamer",
+  "author": "Chris Manson <chris@stonecircle.io>",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive --reporter spec",
+    "test-watch": "npm run test -- -w --reporter min",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- -R spec --recursive"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "q": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.3.3",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.2"
+  }
+}
